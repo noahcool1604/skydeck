@@ -1,46 +1,62 @@
-# SkyDeck
+<p align="center">
+  <a href="https://noahcool1604.github.io/skydeck/"><img src="skydeck-banner.svg" alt="SkyDeck – Jeder Flug, jedes Foto, auf einen Blick" width="100%"></a>
+</p>
 
-Ein Viewer für Fotos, Videos und Flugdaten von DJI-Drohnen. Er läuft komplett im Browser, und deine Dateien werden nirgendwo hochgeladen.
+<p align="center">
+  <a href="https://noahcool1604.github.io/skydeck/"><img src="skydeck-starten.svg" alt="SkyDeck jetzt öffnen" width="560"></a>
+</p>
 
-![Galerie](galerie.png)
+<h3 align="center"><a href="https://noahcool1604.github.io/skydeck/">noahcool1604.github.io/skydeck</a></h3>
 
-## Was er kann
+<p align="center">Kostenlos, ohne Anmeldung, ohne Installation.<br>Deine Fotos und Videos bleiben auf deinem Rechner.</p>
 
-- **Mediathek**: alle Fotos und Videos im Blocksatz wie in einem Foto-Programm, nach Tagen gruppiert. Seitenleiste mit Fotos, Videos, RAW, Flügen und Karte; Suche, Sortierung (auch nach Flughöhe) und Vorschaugröße.
-- **Foto-Ansicht**: Vollbild mit Zoom (Mausrad oder Doppelklick), Filmstreifen und Blättern mit den Pfeiltasten. Daneben stehen Höhe über dem Startpunkt, ISO, Belichtung, Blende, Aufnahmeort auf einer Mini-Karte und alle Metadaten.
-- **Video mit Flugdaten**: eigener Player, dessen Zeitleiste gleichzeitig das Höhenprofil ist. Höhe (H), Entfernung (D), Tempo (H.S) und Steigrate (V.S) laufen live im Bild mit, dazu ein kleines Radar mit der Route. Daneben eine Karte, auf der die Drohne mitfliegt.
-- **Flüge**: jeder Flug als Karte mit Routen-Skizze, Höhenverlauf und den wichtigsten Werten.
-- **Karte mit Flugbuch**: alle Fotos mit Vorschaubild an ihrem Aufnahmeort und alle Flugrouten. Links steht das Flugbuch: Beim Durchscrollen fliegt die Karte zu jedem vergangenen Flug und hebt ihn hervor.
-- **RAW**: Wenn neben einem JPG eine DNG-Datei mit gleichem Namen liegt, wird sie erkannt und kann gespeichert werden.
+<br>
 
-| Foto | Video mit Flugdaten |
-|---|---|
-| ![](foto.png) | ![](video.png) |
-| **Flüge** | **Karte** |
-| ![](fluege.png) | ![](karte.png) |
+## So geht's
 
-*Die Screenshots zeigen erzeugte Testdaten, keine echten Drohnenaufnahmen.*
+1. **[SkyDeck öffnen](https://noahcool1604.github.io/skydeck/)**, am Computer oder Handy.
+2. Auf **Ordner öffnen** klicken und den Ordner von der SD-Karte der Drohne wählen (meist `DCIM`). Oder den Ordner einfach ins Fenster ziehen.
+3. Fertig. SkyDeck liest Fotos, Videos und Flugdaten direkt im Browser.
 
-## Kostenlos online stellen (GitHub Pages)
+## Was SkyDeck kann
 
-SkyDeck braucht keinen Server, deshalb reicht GitHub Pages. Danach aktualisiert sich die Seite bei jedem neuen Commit von selbst.
+<table>
+  <tr>
+    <td width="50%"><img src="galerie.png" alt="Mediathek"></td>
+    <td width="50%"><img src="video.png" alt="Video mit Flugdaten"></td>
+  </tr>
+  <tr>
+    <td><b>Mediathek</b><br>Alle Fotos und Videos lückenlos nebeneinander, nach Tagen sortiert. Mit Suche, Filtern für Fotos, Videos und RAW und Sortierung nach Flughöhe.</td>
+    <td><b>Video mit Flugdaten</b><br>Höhe (H), Entfernung (D), Tempo (H.S) und Steigrate (V.S) laufen live im Bild mit, dazu ein Radar mit der Route. Die Zeitleiste ist gleichzeitig das Höhenprofil.</td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="karte.png" alt="Karte mit Flugbuch"></td>
+    <td width="50%"><img src="foto.png" alt="Foto-Ansicht"></td>
+  </tr>
+  <tr>
+    <td><b>Karte mit Flugbuch</b><br>Alle Fotos an ihrem Aufnahmeort und alle Flugrouten. Scroll durchs Flugbuch, und die Karte fliegt zu jedem vergangenen Flug.</td>
+    <td><b>Foto-Ansicht</b><br>Vollbild mit Zoom und Filmstreifen. Daneben Flughöhe, Kamera-Einstellungen, Drohnenmodell und der Aufnahmeort auf einer Mini-Karte.</td>
+  </tr>
+</table>
 
-1. Das Repo muss **öffentlich** sein. Mit einem kostenlosen GitHub-Konto gibt es Pages nur für öffentliche Repos; für private Repos braucht man ein bezahltes Konto (z. B. GitHub Pro).
-2. Im Repo auf **Settings → Pages** gehen.
-3. Bei **Source** „Deploy from a branch“ wählen, dann Branch **main** und Ordner **/ (root)**, und **Save** drücken.
-4. Nach ein bis zwei Minuten steht oben die Adresse, z. B. `https://deinname.github.io/skydeck/`.
+<p align="center"><img src="fluege.png" alt="Flüge" width="80%"><br><b>Flüge:</b> jeder Flug mit Routen-Skizze, Höhenverlauf und den wichtigsten Werten.</p>
 
-Online steht dann nur das Programm. Deine Fotos und Videos werden auch auf der Online-Version nicht hochgeladen, sondern nur in deinem Browser gelesen.
+<p align="center"><sub>Die Screenshots zeigen erzeugte Testdaten, keine echten Drohnenaufnahmen.</sub></p>
 
-## Benutzen
+## Flugdaten zu den Videos
 
-**Online:** Wenn GitHub Pages eingeschaltet ist (siehe oben), öffnest du einfach die Seite und klickst auf **Ordner öffnen**.
+Höhe, Tempo und Route gibt es nur, wenn die Drohne sie mitgespeichert hat. Dafür in der DJI-App unter den Kamera-Einstellungen die **Video-Untertitel** einschalten. Die Drohne legt dann neben jedes Video eine `.SRT`-Datei mit gleichem Namen, z. B. `DJI_0042.MP4` und `DJI_0042.SRT`.
 
-**Offline:** `index.html` herunterladen und im Browser öffnen. Für die Kartenbilder brauchst du trotzdem Internet.
+SkyDeck versteht mehrere Formate, die DJI über die Jahre benutzt hat:
 
-Wähle dann den Ordner von der SD-Karte (meist `DCIM`) oder zieh ihn einfach ins Fenster.
+- `[latitude: …] [longitude: …] [rel_alt: … abs_alt: …]`, z. B. Mini 2, Mini 3 Pro, Air 2S, Mavic 3
+- `GPS(lon,lat,…) BAROMETER:…`, z. B. Mavic Pro, Phantom 4
+- `GPS (…), D …m, H …m, H.S …m/s`, z. B. Phantom 4 Pro, Mavic 2
 
-### Tastenkürzel im Betrachter
+Liegt keine `.SRT` daneben, sucht SkyDeck eine Untertitelspur direkt in der MP4. So speichern es manche neueren Modelle.
+
+<details>
+<summary><b>Tastenkürzel</b></summary>
 
 | Taste | Aktion |
 |---|---|
@@ -49,37 +65,31 @@ Wähle dann den Ordner von der SD-Karte (meist `DCIM`) oder zieh ihn einfach ins
 | Leertaste | Video abspielen / anhalten |
 | I | Infos ein/aus |
 | S | Filmstreifen ein/aus |
-| H | Flug-Anzeige im Video ein/aus |
+| H | Fluganzeige im Video ein/aus |
 | M | auf der Karte zeigen |
 | F | Vollbild |
 | + − 0 | Zoom rein / raus / zurücksetzen |
 | Esc | schließen |
 
-## Flugdaten für Videos
+</details>
 
-Höhe, Tempo und Route zu einem Video gibt es nur, wenn die Drohne sie mitgespeichert hat. Dafür in der DJI-App unter den Kamera-Einstellungen die **Video-Untertitel** einschalten. Die Drohne legt dann zu jedem Video eine `.SRT`-Datei mit gleichem Namen ab (z. B. `DJI_0042.MP4` und `DJI_0042.SRT`).
+<details>
+<summary><b>Gut zu wissen: Grenzen</b></summary>
 
-SkyDeck versteht mehrere SRT-Formate, die DJI über die Jahre benutzt hat:
-
-- `[latitude: …] [longitude: …] [rel_alt: … abs_alt: …]` (z. B. Mini 2, Mini 3 Pro, Air 2S, Mavic 3)
-- `GPS(lon,lat,…) BAROMETER:…` (z. B. Mavic Pro, Phantom 4)
-- `GPS (…), D …m, H …m, H.S …m/s` (z. B. Phantom 4 Pro, Mavic 2)
-
-Wenn keine `.SRT` daneben liegt, sucht SkyDeck eine Untertitelspur direkt in der MP4 (so speichern es manche neuere Modelle).
-
-## Ehrlich gesagt: Grenzen
-
-- **Getestet** wurde mit erzeugten Testdateien in den drei oben genannten SRT-Formaten und mit einer Standard-MP4-Untertitelspur, **nicht mit echten Dateien von jeder Drohne**. Wenn bei deiner Drohne etwas fehlt, eröffne gern ein Issue mit einer kurzen Beispiel-SRT.
+- **Getestet** wurde mit erzeugten Testdateien in den drei SRT-Formaten oben und mit einer Standard-MP4-Untertitelspur, nicht mit echten Dateien von jeder Drohne. Wenn bei deiner Drohne etwas fehlt, eröffne gern ein Issue mit einer kurzen Beispiel-SRT.
 - **Ruckelnde Videos:** 4K-Originale können auf schwächeren Rechnern im Browser ruckeln. Liegt eine `.LRF`-Datei daneben, schaltet der Knopf **HD/SD** im Player auf diese kleinere Vorschau-Datei um.
-- **H.265-Videos (HEVC)** kann nicht jeder Browser abspielen. Chrome und Edge schaffen das meist nur, wenn der Rechner H.265 per Hardware unterstützt; Safari auf dem Mac kann es in der Regel. Liegt eine `.LRF`-Vorschaudatei daneben, spielt SkyDeck stattdessen diese ab.
-- **DNG-Dateien** kann ein Browser nicht direkt anzeigen. Liegt kein JPG daneben, versucht SkyDeck die in der DNG eingebettete Vorschau zu zeigen. Mit echten DJI-DNGs ist das nicht getestet.
-- **Flug-Logs** aus der DJI-App (`DJIFlightRecord_….txt`) werden nicht gelesen. Neuere sind verschlüsselt.
+- **H.265-Videos (HEVC)** kann nicht jeder Browser abspielen. Chrome und Edge schaffen das meist nur, wenn der Rechner H.265 per Hardware unterstützt; Safari auf dem Mac kann es in der Regel.
+- **DNG-Dateien** kann ein Browser nicht direkt anzeigen. Liegt kein JPG daneben, zeigt SkyDeck die in der DNG eingebettete Vorschau, falls es eine gibt.
+- **Flug-Logs** aus der DJI-App (`DJIFlightRecord_….txt`) werden noch nicht gelesen. Neuere sind verschlüsselt.
 - Tempo und Entfernung werden aus den GPS-Punkten berechnet, wenn die Drohne sie nicht selbst speichert. Das sind dann Näherungswerte.
-- Der Drohnenname (z. B. „DJI Mini 3 Pro“) wird nur für Kameramodelle angezeigt, deren Zuordnung sicher ist. Sonst steht nur der Modellcode da (z. B. `FC8482`).
+- Für die Kartenbilder braucht man Internet.
 
-## Technik
+</details>
 
-Die ganze App steckt in einer einzigen Datei, `index.html`: HTML, CSS, JavaScript, Schriften und Bibliotheken sind eingebettet. Es gibt keinen Build-Schritt und keinen Server.
+<details>
+<summary><b>Technik</b></summary>
+
+Die ganze App steckt in einer einzigen Datei, `index.html`: HTML, CSS, JavaScript, Schriften und Bibliotheken sind eingebettet. Es gibt keinen Server; alles läuft im Browser. Zum Offline-Benutzen reicht es, `index.html` herunterzuladen und zu öffnen.
 
 Eingebettete Bibliotheken (Lizenztexte in `THIRD-PARTY-LICENSES.txt`):
 
@@ -89,6 +99,8 @@ Eingebettete Bibliotheken (Lizenztexte in `THIRD-PARTY-LICENSES.txt`):
 
 Kartenbilder: Satellit von Esri, Straßenkarte von OpenStreetMap, dunkle Karte von CARTO.
 
+</details>
+
 ## Lizenz
 
-MIT, siehe [LICENSE](LICENSE). Kein offizielles DJI-Produkt; DJI ist eine Marke von SZ DJI Technology Co., Ltd.
+MIT, siehe [LICENSE](LICENSE). SkyDeck ist kein offizielles DJI-Produkt; DJI ist eine Marke von SZ DJI Technology Co., Ltd.
